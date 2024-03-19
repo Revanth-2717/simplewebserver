@@ -82,6 +82,8 @@ httpd.serve_forever()
 
 ## OUTPUT:
 ![Screenshot 2024-03-19 205430](https://github.com/Revanth-2717/simplewebserver/assets/152462274/eb3b708d-f841-4f51-923b-e3592f228bd3)
+<br>
+<br>
 ![Screenshot 2024-03-19 205046](https://github.com/Revanth-2717/simplewebserver/assets/152462274/87a79a9a-a88c-4527-89fa-71e9bb55dda4)
 
 
