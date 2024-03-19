@@ -23,41 +23,65 @@ Testing the webserver.
 ## PROGRAM:
 ```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
-
 content = """
 <html>
-<head>
-</head>
-<body>
-<h1>Top Five Revenue Generating websites</h1>
-
-<h1>1. AMAZON</h1>
-<h1>2. META</h1>
-<h1>3. NETFLIX</h1>
-<h1>4. GOOGLE</h1>
-<h1>5. X</h1>
-
-</body>
-</html>
+    <head>
+         <title>simplewebserver</title>
+    </head>
+    <body>
+        <table align="center" border="2" cellspacing="12" cellpadding="12" height="25" width="50">
+        <h1 align="center" >top 5 software companies with revenue</h1>
+            <tr>
+            
+                <th>RANK</th>
+                <th>COMPANY</th>
+                <th>REVENUE</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Microsoft</td>
+                <td>$86.8</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>oracle</td>
+                <td>$37.1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SAP</td>
+                <td>$20.9</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>symantec</td>
+                <td>$6.8</td>
+            </tr>
+             <tr>
+                <td>5</td>
+                <td>VMware</td>
+                <td>$5.2</td>
+            </tr>
+        </table>
+    </body>
+<html>
 """
-
-class HelloHandler(BaseHTTPRequestHandler):
+class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("Get request received")
+        print("request received")
         self.send_response(200)
-        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-
-print("This is my web server")
-server_address = ('', 80)
-httpd = HTTPServer(server_address, HelloHandler)
+server_address = ('',8000)
+httpd = HTTPServer(server_address,myhandler)
+print("my webserver is running...")
 httpd.serve_forever()
-
 ```
 
 ## OUTPUT:
-![Screenshot 2024-03-18 194718](https://github.com/Revanth-2717/simplewebserver/assets/152462274/98e81ddd-e567-4038-86c0-573b09edaefd)
+![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/b2d2f836-762b-47ec-a889-a5940511ef20)
+![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/1459c13e-5087-41e0-8070-bd394a183a53)
 
 
 ## RESULT:
