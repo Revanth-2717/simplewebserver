@@ -73,16 +73,17 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',8000)
+server_address = ('',80)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
+
 ```
 
 ## OUTPUT:
-![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/b2d2f836-762b-47ec-a889-a5940511ef20)
+![Screenshot 2024-03-19 205430](https://github.com/Revanth-2717/simplewebserver/assets/152462274/eb3b708d-f841-4f51-923b-e3592f228bd3)
+![Screenshot 2024-03-19 205046](https://github.com/Revanth-2717/simplewebserver/assets/152462274/87a79a9a-a88c-4527-89fa-71e9bb55dda4)
 
-![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/1459c13e-5087-41e0-8070-bd394a183a53)
 
 
 ## RESULT:
