@@ -1,5 +1,5 @@
-# EX01 Developing a Simple Webserver
-## Date: 18-03-24
+-# EX01 Developing a Simple Webserver
+## Date: 27-02-24
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -81,6 +81,7 @@ httpd.serve_forever()
 
 ## OUTPUT:
 ![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/b2d2f836-762b-47ec-a889-a5940511ef20)
+
 ![image](https://github.com/Revanth-2717/simplewebserver/assets/152462274/1459c13e-5087-41e0-8070-bd394a183a53)
 
 
